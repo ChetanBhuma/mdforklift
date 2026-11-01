@@ -6,7 +6,9 @@ import BusinessHighlights from "@/components/BusinessHighlights";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Machinery from "@/components/Machinery";
+import ServiceAreas from "@/components/ServiceAreas";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Location from "@/components/Location";
 import Footer from "@/components/Footer";
@@ -37,17 +39,23 @@ export default function HomePage() {
         {/* 7. Our Machinery (JCB Telehandler & ACE Forklift) */}
         <Machinery />
 
-        {/* 8. Why Choose Us (4 Benefits) */}
+        {/* 8. Service Areas & Industrial Belt Coverage */}
+        <ServiceAreas />
+
+        {/* 9. Why Choose Us (4 Benefits) */}
         <WhyChooseUs />
 
-        {/* 9. Contact / WhatsApp Enquiry Section */}
+        {/* 10. Frequently Asked Questions (SEO & AI Intent) */}
+        <FAQ />
+
+        {/* 11. Contact / WhatsApp Enquiry Section */}
         <Contact />
 
-        {/* 10. Location Section with Interactive Map */}
+        {/* 12. Location Section with Interactive Map */}
         <Location />
       </main>
 
-      {/* 11. Industrial Footer */}
+      {/* 13. Industrial Footer */}
       <Footer />
 
       {/* Persistent Floating WhatsApp & Call dialer */}
@@ -55,4 +63,3 @@ export default function HomePage() {
     </div>
   );
 }
-
