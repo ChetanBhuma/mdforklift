@@ -60,8 +60,8 @@ const jsonLd = {
   telephone: ["+919220893841", "+919213391241"],
   address: {
     "@type": "PostalAddress",
-    streetAddress: "A Block Parking",
-    addressLocality: "Narela Industrial Area",
+    streetAddress: "A-219 Narela DSIIDC Industrial Area",
+    addressLocality: "Narela",
     addressRegion: "Delhi",
     postalCode: "110040",
     addressCountry: "IN",

@@ -1,9 +1,10 @@
 import React from "react";
-import { MapPin, Navigation, ExternalLink, Phone, Shield } from "lucide-react";
+import { MapPin, Navigation, ExternalLink, Phone } from "lucide-react";
 
 export default function Location() {
-  const directionsUrl =
-    "https://www.google.com/maps/search/?api=1&query=Narela+Industrial+Area+A+Block+Parking+Delhi+India";
+  const directionsUrl = "https://maps.app.goo.gl/fnogrbWydWvUGumR7?g_st=aw";
+  const embedMapUrl =
+    "https://maps.google.com/maps?q=A-219+Narela+DSIIDC+Industrial+area,+DSIDC+Industrial+Area,+Narela,+Delhi,+110040&t=&z=15&ie=UTF8&iwloc=&output=embed";
 
   return (
     <section id="location" className="py-16 sm:py-24 bg-white border-b border-[#E2E6EA]">
@@ -17,7 +18,7 @@ export default function Location() {
             FIND OUR LOCATION
           </h2>
           <p className="text-base sm:text-lg text-[#626B75]">
-            Centrally situated in Narela Industrial Area to support machinery
+            Centrally situated in Narela DSIIDC Industrial Area to support machinery
             requirements and rapid dispatch across North Delhi and NCR.
           </p>
         </div>
@@ -36,10 +37,10 @@ export default function Location() {
                     Operational Base
                   </div>
                   <h3 className="font-heading font-bold text-2xl uppercase text-[#171C24] mt-1">
-                    Narela Industrial Area
+                    A-219 Narela DSIIDC
                   </h3>
-                  <p className="text-sm text-[#626B75] mt-1 font-medium">
-                    A Block Parking, Delhi, India.
+                  <p className="text-sm text-[#626B75] mt-1 font-medium leading-relaxed">
+                    A-219 Narela DSIIDC Industrial Area, DSIDC Industrial Area, Narela, Delhi - 110040, India.
                   </p>
                 </div>
               </div>
@@ -47,15 +48,15 @@ export default function Location() {
               <div className="border-t border-[#E2E6EA] pt-5 space-y-3 text-xs sm:text-sm text-[#626B75]">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#F5A623]" />
-                  <span>Heavy vehicle parking and equipment parking zone</span>
+                  <span>Heavy vehicle parking and equipment staging zone</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#F5A623]" />
-                  <span>Direct highway accessibility for equipment transit</span>
+                  <span>Direct highway accessibility for rapid machinery transit</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#F5A623]" />
-                  <span>Serving industrial factories, yards & warehouses</span>
+                  <span>Serving industrial factories, yards & manufacturing plants</span>
                 </div>
               </div>
 
@@ -79,7 +80,7 @@ export default function Location() {
                 className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 bg-[#171C24] hover:bg-[#293545] active:bg-[#0F1217] text-white text-xs font-bold uppercase tracking-wider rounded shadow transition-all duration-200"
               >
                 <Navigation className="w-4 h-4 text-[#F5A623]" />
-                <span>Get Directions on Google Maps</span>
+                <span>Open in Google Maps</span>
                 <ExternalLink className="w-3.5 h-3.5 text-gray-400" />
               </a>
             </div>
@@ -89,29 +90,29 @@ export default function Location() {
           <div className="lg:col-span-7 bg-[#171C24] p-3 rounded-md border border-[#293545] shadow-md flex flex-col min-h-[380px] sm:min-h-[440px]">
             <div className="relative w-full flex-1 rounded overflow-hidden bg-[#1F2631]">
               <iframe
-                title="M.D Forklift Cranes & Transport Services Location Map - Narela Industrial Area Delhi"
-                src="https://maps.google.com/maps?q=Narela+Industrial+Area+A+Block+Parking+Delhi&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                title="M.D Forklift Cranes & Transport Services - A-219 Narela DSIIDC Industrial Area Delhi"
+                src={embedMapUrl}
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: "360px" }}
                 allowFullScreen={false}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-full filter saturate-[0.9] contrast-[1.05]"
+                className="w-full h-full filter saturate-[0.95] contrast-[1.05]"
               />
             </div>
             <div className="mt-2.5 px-2 flex items-center justify-between text-[11px] text-gray-400">
-              <span className="flex items-center gap-1.5">
-                <MapPin className="w-3.5 h-3.5 text-[#F5A623]" />
-                Narela Industrial Area, A Block Parking, Delhi
+              <span className="flex items-center gap-1.5 truncate">
+                <MapPin className="w-3.5 h-3.5 text-[#F5A623] flex-shrink-0" />
+                <span className="truncate">A-219 Narela DSIIDC Industrial Area, Delhi - 110040</span>
               </span>
               <a
                 href={directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#F5A623] hover:underline font-semibold"
+                className="text-[#F5A623] hover:underline font-semibold flex-shrink-0 ml-3"
               >
-                View Larger Map
+                View on Google Maps
               </a>
             </div>
           </div>
@@ -120,4 +121,3 @@ export default function Location() {
     </section>
   );
 }
-

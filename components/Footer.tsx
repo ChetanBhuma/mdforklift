@@ -139,7 +139,7 @@ export default function Footer() {
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#F5A623] flex-shrink-0 mt-1" />
                 <span className="leading-snug">
-                  Narela Industrial Area, A Block Parking, Delhi, India.
+                  A-219 Narela DSIIDC Industrial Area, Delhi - 110040, India.
                 </span>
               </div>
 

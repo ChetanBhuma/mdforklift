@@ -157,7 +157,7 @@ export default function Contact() {
                     Operating Facility Address
                   </div>
                   <div className="text-base font-semibold text-white mt-1 leading-snug">
-                    Narela Industrial Area, A Block Parking, Delhi, India.
+                    A-219 Narela DSIIDC Industrial Area, Delhi - 110040, India.
                   </div>
                   <div className="text-xs text-gray-400 mt-1">
                     Hub for machinery dispatch and coordination

@@ -105,7 +105,7 @@ export default function Hero() {
               <div className="mt-4 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs text-gray-400">
                 <span className="flex items-center gap-1.5">
                   <MapPin className="w-3.5 h-3.5 text-[#F5A623]" />
-                  A Block Parking, Narela Industrial Area, Delhi
+                  A-219 Narela DSIIDC Industrial Area, Delhi
                 </span>
                 <span className="hidden sm:inline text-gray-600">•</span>
                 <span className="flex items-center gap-1.5 text-gray-300">
